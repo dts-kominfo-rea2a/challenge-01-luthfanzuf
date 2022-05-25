@@ -1,6 +1,9 @@
 // TODO: Buatlah data dari kedua user di sini
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
+const favResMonica = ['Bento','Sushi','Pancake','Eggy','Tempura','Bento','Eggy','Padang','Tteok','Sushi','Sushi']
+const favResWendy = ['Tempura','Bento','Sushi','Pancake','Padang','Katsu','Geprek','Pancake','Eggy']
+
 const firstUser = {
     name: 'Monica',
     gender: 'Female',
@@ -20,7 +23,7 @@ const firstUser = {
         name: 'SMA 03',
         city: 'Tangerang'
     }],
-    favoriteRestaurant:[]
+    favoriteRestaurant:[...new Set(favResMonica)]
 };
 const secondUser = {
     name: 'Wendy',
@@ -45,30 +48,8 @@ const secondUser = {
         name: 'Universitas Maju',
         city: 'Tangerang'
     }],
-    favoriteRestaurant:[]
+    favoriteRestaurant:[...new Set(favResWendy)]
 };
-let favResMonica = ['Bento','Sushi','Pancake','Eggy','Tempura','Bento','Eggy','Padang','Tteok','Sushi','Sushi']
-let favResWendy = ['Tempura','Bento','Sushi','Pancake','Padang','Katsu','Geprek','Pancake','Eggy']
-
-let setMonica = new Set()
-let setWendy= new Set()
-
-for (let i=0; i<favResMonica.length; i++) {
-    setMonica.add(favResMonica[i])
-}
-
-for (let i=0; i<favResWendy.length; i++) {
-    setWendy.add(favResWendy[i])
-}
-// test console.log
-// console.log(setMonica);
-// console.log(setWendy);
-
-// push set ke object
-firstUser.favoriteRestaurant = setMonica;
-secondUser.favoriteRestaurant = setWendy;
-// console.log(firstUser);
-// console.log(secondUser);
 
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
