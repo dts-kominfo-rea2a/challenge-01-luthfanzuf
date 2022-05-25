@@ -4,6 +4,7 @@
 const firstUser = {
     name: 'Monica',
     gender: 'Female',
+    age: 17,
     email: 'monica@dingdong.com',
     favoriteColor: ['Yellow', 'Pink', 'White', 'Purple'],
     isHavePet: true,
@@ -24,6 +25,7 @@ const firstUser = {
 const secondUser = {
     name: 'Wendy',
     gender: 'Male',
+    age: 23,
     email: 'wendy@dingdong.com',
     favoriteColor: ['Blue', 'Black', 'Grey'],
     isHavePet: false,
@@ -72,7 +74,9 @@ secondUser.favoriteRestaurant = setWendy;
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [];
 
-users.push(firstUser, secondUser);
+users.push(firstUser);
+users.push(secondUser);
+
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
